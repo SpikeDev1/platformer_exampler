@@ -1,5 +1,10 @@
-syntax: glob
-obj/*
-_Resharper*
-bin/*
-_ReSharper*
+obj/
+bin/
+.vs/
+*.user
+*.suo
+*.cache
+.idea/
+*.iml
+*.ReSharper*/
+_ReSharper*/
