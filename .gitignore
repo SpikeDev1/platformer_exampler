@@ -1,0 +1,5 @@
+syntax: glob
+obj/*
+_Resharper*
+bin/*
+_ReSharper*

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F7C0264-BAD5-4C42-9F40-612F23C96195}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gamemaker</RootNamespace>
+    <AssemblyName>Gamemaker</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UnityTest|AnyCPU'">
+    <OutputPath>bin\UnityTest\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Local|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Local\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UnityClient IOS|AnyCPU'">
+    <OutputPath>bin\UnityClient IOS\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseAW|AnyCPU'">
+    <OutputPath>bin\ReleaseAW\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UniRxUnity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Plugins\UniRxUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AchievmentSystem\AchievmentSimple.cs" />
+    <Compile Include="Advertisement\Advertisement.cs" />
+    <Compile Include="EntitySystem\ArrayExtensions.cs" />
+    <Compile Include="EntitySystem\Entity.cs" />
+    <Compile Include="EntitySystem\ComponentEntity.cs" />
+    <Compile Include="EntitySystem\CounterComponent.cs" />
+    <Compile Include="EntitySystem\TransformData.cs" />
+    <Compile Include="Misc\Bool3.cs" />
+    <Compile Include="Misc\CacherObjects.cs" />
+    <Compile Include="Misc\Counter.cs" />
+    <Compile Include="Misc\Health.cs" />
+    <Compile Include="Misc\HealthComponent.cs" />
+    <Compile Include="Misc\IDestroy.cs" />
+    <Compile Include="Misc\IHealthable.cs" />
+    <Compile Include="Misc\MaterialObject.cs" />
+    <Compile Include="Misc\ObjectCollect.cs" />
+    <Compile Include="Misc\PartObject.cs" />
+    <Compile Include="Misc\ReceiveExplosion.cs" />
+    <Compile Include="Misc\ReceiveImpact.cs" />
+    <Compile Include="Misc\Request.cs" />
+    <Compile Include="Misc\ActivatorGameObject.cs" />
+    <Compile Include="Misc\PreserveAttribute.cs" />
+    <Compile Include="Patterns\FSM\StateBase.cs" />
+    <Compile Include="Patterns\FSM\StateBaseController.cs" />
+    <Compile Include="Patterns\FSM\IState.cs" />
+    <Compile Include="Patterns\FSM\IStateController.cs" />
+    <Compile Include="Patterns\Pool\IPoolObject.cs" />
+    <Compile Include="Patterns\Pool\ObjectPool.cs" />
+    <Compile Include="Patterns\Pool\ICreation.cs" />
+    <Compile Include="Patterns\Publisher\IProgress.cs" />
+    <Compile Include="Patterns\Publisher\IPublisher.cs" />
+    <Compile Include="Patterns\Publisher\Publisher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpawnSystem\SourceSpawnData.cs" />
+    <Compile Include="SpawnSystem\SpawnArea.cs" />
+    <Compile Include="SpawnSystem\SpawnAreaCircle.cs" />
+    <Compile Include="SpawnSystem\SpawnAreaCircleSettings.cs" />
+    <Compile Include="SpawnSystem\SpawnAreaData.cs" />
+    <Compile Include="SpawnSystem\SpawnAreaPoints.cs" />
+    <Compile Include="SpawnSystem\Spawner.cs" />
+    <Compile Include="Utility\ArtHelper.cs" />
+    <Compile Include="Utility\Task.cs" />
+    <Compile Include="Utility\TaskManager.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"D:\Projects\Tanks\Sources\pdb2mdb.exe" "$(TargetDir)$(TargetName).dll"
+echo f | xcopy "$(TargetPath)" "$(ProjectDir)..\" /Y
+echo f | xcopy "$(TargetPath)" "$(ProjectDir)..\..\..\Assets\Plugins\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).dll.mdb" "$(ProjectDir)..\..\..\Assets\Plugins\" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
