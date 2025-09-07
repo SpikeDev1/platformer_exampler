@@ -78,8 +78,9 @@ The project follows a Subject System Architecture:
 
 ## Project Folder Structure
 
-Core/ → Infrastructure, bootstrap, helpers
-Gameplay/ → Gameplay entities and abilities
-Model/ → Data models and signals
-Systems/ → Unified gameplay systems (no one-off implementations)
+- **Core/** → Infrastructure, bootstrap, helpers
+- **Gameplay/** → Gameplay entities and abilities
+- **Model/** → Data models and signals
+- **Systems/** → Unified gameplay systems (no one-off implementations)
+
 ![org](docs/image1.png)
