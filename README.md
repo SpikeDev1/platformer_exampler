@@ -1,6 +1,6 @@
 # Platformer Demo Game
 
-A 2D platformer demo project built to showcase clean and modern Unity architecture.  
+The 2D platformer demo project built to showcase clean and modern Unity architecture.  
 This example integrates **Zenject (Dependency Injection)**, **UniRx (Reactive Extensions)**, and **UniTask (async/await for Unity)**, using official Unity demo art.
 
 ---
