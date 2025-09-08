@@ -7,7 +7,7 @@ This example integrates **Zenject (Dependency Injection)**, **UniRx (Reactive Ex
 
 ## About the Project
 
-This demo game was created for educational and demonstration purposes.  
+This demo game was created for demonstration purposes.  
 It’s a classic side-scrolling platformer where the player moves from left to right, collecting tokens and battling enemies.
 
 The main goal is not gameplay complexity, but to demonstrate architecture patterns and best practices for Unity development.
